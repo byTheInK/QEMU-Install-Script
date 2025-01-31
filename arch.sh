@@ -37,7 +37,7 @@ while [$_done]; do
         yay -S qemu-base
     fi
 
-    if [$_qemu = "1"]; then
+    if [$_qemu = "3"]; then
         echo "Installing qemu-desktop package from AUR"
         sleep 3
 
