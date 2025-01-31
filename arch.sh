@@ -24,6 +24,23 @@ while [$_done]; do
     read _qemu
 
     if [$_qemu = "1"]; then
+        echo "Installing qemu-full package from AUR"
+        sleep 3
 
+        yay -S qemu-full 
+    fi
+
+    if [$_qemu = "2"]; then
+        echo "Installing qemu-base package from AUR"
+        sleep 3
+
+        yay -S qemu-base
+    fi
+
+    if [$_qemu = "1"]; then
+        echo "Installing qemu-desktop package from AUR"
+        sleep 3
+
+        yay -S qemu-desktop
     fi
 done
