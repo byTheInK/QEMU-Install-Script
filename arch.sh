@@ -8,7 +8,7 @@ if ! command -v yay &> /dev/null
 then
     echo "Yay not found installing"
     sleep 1
-    sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+    sudo git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
     echo "Installed Yay"
     sleep 1
 fi
@@ -24,6 +24,6 @@ while [$_done]; do
     read _qemu
 
     if [$_qemu = "1"]; then
-        
+
     fi
 done
